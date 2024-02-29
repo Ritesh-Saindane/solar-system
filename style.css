@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .space {
+    position: absolute;
+    height: 200vw;
+    width: 200vw;
+    z-index: -1;
+    background-image: url(paul-volkmer-qVotvbsuM_c-unsplash.jpg);
+    background-size: cover;
+    animation: rotate 200s linear infinite;
+  }
+
+  .sun {
+    width: 50px; 
+    height: 50px;
+    background-color: orangered;
+    box-shadow: 0 0 10px orangered ;
+    border-radius: 50%;
+  }
+  .orbit {
+    position: absolute;
+    width: 100vh;
+    display: flex;
+  }
+  .orbit-of-mercury {
+    animation: rotate 5s linear infinite;
+  }
+  .mercury {
+    height: 10px;
+    width: 10px;
+    background-color: orange;
+    position: relative;
+    margin-left: 43vh;
+    border-radius: 50%;
+    box-shadow: 0 0 10px orange ;
+  }
+  @keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+  }
+  
+  .orbit-of-venus {
+    animation: rotate 15s reverse linear infinite;
+  }
+  .venus {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(255, 121, 48);
+    position: relative;
+    margin-left: 38vh;
+    border-radius: 50%;
+    box-shadow: 0 0 7px rgb(255, 121, 48);
+  }
+  .orbit-of-earth {
+    animation: rotate 20s linear infinite;
+  }
+  .earth {
+    height: 22px;
+    width: 22px;
+    background-color: rgb(48, 165, 255);
+    position: relative;
+    margin-left: 32vh;
+    border-radius: 50%;
+    box-shadow: 0 0 3px rgb(48, 165, 255);
+  }
+  .orbit-of-mars {
+    animation: rotate 25s linear infinite;
+  }
+  .mars {
+    height: 15px;
+    width: 15px;
+    background-color: rgb(255, 48, 48);
+    position: relative;
+    margin-left: 28vh;
+    border-radius: 50%;
+    box-shadow: 0 0 3px rgb(255, 48, 48);
+  }
+  .orbit-of-jupiter {
+    animation: rotate 40s linear infinite;
+  }
+  .jupiter {
+    height: 40px;
+    width: 40px;
+    background-color: #FAD02E;
+    position: relative;
+    margin-left: 20vh;
+    border-radius: 50%;
+    box-shadow: 0 0 2px #FAD02E;
+  }
+  .orbit-of-saturn {
+    /* background-color: blue; */
+    animation: rotate 60s linear infinite;
+  }
+  .saturn {
+    height: 35px;
+    width: 35px;
+    background-color: #E3CB87;
+    position: relative;
+    margin-left: 10vh;
+    border-radius: 50%;
+    box-shadow: 0 0 2px #E3CB87;
+    outline: 2px solid white;
+    outline-offset: 10px;
+    border: 1px solid white;
+  }
